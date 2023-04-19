@@ -1,5 +1,6 @@
 package main;
 
+import generic.Name;
 import generic.Student;
 
 public class StudentImpl {
@@ -25,9 +26,9 @@ public class StudentImpl {
         }
     */
         //xyz
-        Student<Integer> student = new Student<>(12345, "Vaibhav");
+        Student<Integer,String> student = new Student<>(12345, "Vaibhav");
         //abc -> String
-        Student<String> abcStudent = new Student<>("IT12345", "Ramesh");
+        Student<String, Name> abcStudent = new Student<>("IT12345", new Name("Ramesh", "Sharma"));
     }
 
 }
